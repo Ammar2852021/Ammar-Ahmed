@@ -254,7 +254,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #ec5252;
+  background:red ;
   position: absolute;
   right: 1px;
   border: 1px solid var(--theme-bg);
@@ -265,19 +265,7 @@ body {
     display: none;
   }
 }
-.user-img {
-  width: 30px;
-  height: 30px;
-  flex-shrink: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-}
-.user-name {
-  color: #fff;
-  font-size: 14px;
-  margin: 0 6px 0 12px;
-}
+
 @media screen and (max-width: 575px) {
   .user-name {
     display: none;
@@ -1100,3 +1088,15 @@ button.vjs-play-control.vjs-control.vjs-button {
   width: none;
  }
  
+
+
+
+
+
+
+
+
+ /* @media screen and (max-width:992px) {
+  .sidebar{display: none;}
+  .ONE{display: contents;}
+ } */
