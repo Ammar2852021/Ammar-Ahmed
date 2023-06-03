@@ -405,6 +405,8 @@ height: auto;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+   background-image: url(/Ammar-Ahmed/img/me.png);
+   background-size: cover;
 }
 .author-img__wrapper {
   position: relative;
@@ -650,11 +652,13 @@ video {
   color: #fff;
   line-height: 1.4em;
   margin: 16px 0 20px;
+  text-transform: capitalize;
 }
 .video-p-subtitle {
   font-size: 14px;
   line-height: 1.5em;
   max-width: 60ch;
+  text-transform: capitalize;
 }
 .video-p-subtitle + .video-p-subtitle {
   margin-top: 16px;
@@ -1020,7 +1024,6 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 .video-js.vjs-fluid {
-  border-radius: 20px;
   overflow: hidden;
   min-height: 414px;
 }
