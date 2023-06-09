@@ -572,7 +572,7 @@ font-weight: bold;
 
 @keyframes backgroundIMG {
   100% {
-    background-image: linear-gradient(#BF66FF,#6248FF,#00DDEB);
+  background: #1E1F26;
   }
 }
 
