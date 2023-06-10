@@ -1,17 +1,19 @@
+
 * {
   vertical-align: top;
   box-sizing: border-box;
   font-family: lato, sans-serif;
   font-weight: 300;
-  line-height: 36px;
 }
 
 
 
-.contact {
-  display: inline-block;
-  margin-left: 50px;
-  margin-top: 20px;
+.main-container{
+overflow: hidden;
+}
+
+.left {
+  display: flex;
 }
 
 .url {
@@ -34,22 +36,15 @@
   margin-left: auto;
 }
 
-.left, .right {
-  display: inline-block;
-  width: 49%;
-  height: 700px;
-}
 
 .con-title {
-  width: 450px;
-  height: 50px;
+
   font-weight: 900;
   font-size: 20px;
   color: darkslateblue;
   margin-left: 30px;
   margin-top: 30px;
   padding-top: 15px;
-  border-bottom: solid 1px darkslateblue;
 }
 
 .ex-con-left {
@@ -67,10 +62,9 @@
   margin-top: 30px;
 }
 .ex-con-left .vertical-line {
-  width: 3px;
-  height: 170px;
+
   border-radius: 10%;
-  background-color: #90a955;
+  background-color: darkslateblue;
   margin-left: 24px;
   margin-top: 5px;
 }
@@ -125,7 +119,7 @@
   width: 3px;
   height: 170px;
   border-radius: 10%;
-  background-color: #90a955;
+  background-color: darkslateblue;
   margin-left: 24px;
   margin-top: 5px;
 }
@@ -245,7 +239,9 @@ align-items: center;
 }
 
 .skills {
-  height: 200px;
+padding: 20px;
+line-height: 36px;
+
 }
 
 .sk-title {
@@ -254,10 +250,8 @@ align-items: center;
 }
 
 .skill-con-left, .skill-con-right {
-  display: inline-block;
-  width: 230px;
-  height: 130px;
-  margin-top: 20px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .skill-bar span {
@@ -269,7 +263,6 @@ align-items: center;
 
 .skill-level {
   display: inline-block;
-  margin-left: 10px;
 }
 
 .yes {
@@ -359,4 +352,13 @@ align-items: center;
   width: 100px;
   text-align: center;
   padding-right: 15px;
+}
+
+.ex-con-left .vertical-line {
+  width: 3px;
+  height: 170px;
+  border-radius: 10%;
+  background-color: #90a955;
+  margin-left: 24px;
+  margin-top: 5px;
 }

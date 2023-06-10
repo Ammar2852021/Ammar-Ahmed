@@ -303,322 +303,6 @@ font-weight: bold;
 
 
 /* ....... */
-.main_back {
-  position: absolute;
-  transform: rotate(90deg);
-
-}
-
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 14em;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-}
-
-.card {
-  width: 60px;
-  height: 40px;
-  transition: .2s ease-in-out, .1s background-color ease-in-out, .1s background-image ease-in-out;
-  /* backdrop-filter: blur(5px); */
-  border: 1px solid transparent;
-  /* -webkit-backdrop-filter: blur(5px); */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.card .instagram {
-  opacity: 0;
-  transition: .2s ease-in-out;
-  fill: #cc39a4;
-}
-
-
-.card .twitter {
-  opacity: 0;
-  transition: .2s ease-in-out;
-  fill: #03A9F4;
-}
-
-
-
-.card .dribble {
-  opacity: 0;
-  transition: .2s ease-in-out;
-  fill: #ffb5d2;
-}
-
-
-.card .codepen {
-  opacity: 0;
-  transition: .2s ease-in-out;
-  fill: white;
-}
-
-.card .uiverse {
-  position: absolute;
-  margin-left: 0.2em;
-  margin-top: 0.2em;
-  opacity: 0;
-  transition: .2s ease-in-out;
-    fill: #1a698d;
-
-  
-}
-
-.card:nth-child(9):hover {
-  background-color: rgb(255,69,0);
-}
-
-.card:nth-child(9) .reddit > g circle {
-  fill: rgb(255,69,0);
-}
-
-
-.card .discord {
-  opacity: 0;
-  transition: .2s ease-in-out;
-  fill: #8c9eff;
-}
-
-.card .github {
-  opacity: 0;
-  transition: .2s ease-in-out;
-  fill: white;
-}
-
-.card .telegram {
-  opacity: 0;
-  transition: .2s ease-in-out;
-  fill: #29b6f6;
-}
-
-.card .reddit {
-  opacity: 0;
-  transition: .2s ease-in-out;
-}
-
-.main:hover {
-  width: 14em;
-  cursor: pointer;
-}
-
-.main:hover .main_back {
-  opacity: 0;
-}
-
-.main:hover .card {
-  margin: .2em;
-  border-radius: 10px;
-
-}
-
-.main:hover .text {
-  opacity: 0;
-  z-index: -3;
-}
-
-.main:hover .instagram {
-  opacity: 1;
-}
-
-.main:hover .twitter {
-  opacity: 1;
-}
-
-.main:hover .dribble {
-  opacity: 1;
-}
-
-.main:hover .codepen {
-  opacity: 1;
-}
-
-.main:hover .uiverse {
-  opacity: 1;
-}
-
-.main:hover .discord {
-  opacity: 1;
-}
-
-.main:hover .github {
-  opacity: 1;
-}
-
-.main:hover .telegram {
-  opacity: 1;
-}
-
-.main:hover .reddit {
-  opacity: 1;
-}
-
-.text {
-  position: absolute;
-  font-size: 1.5em;
-  color: white;
-  /* text-align: center; */
-  font-weight: bold;
-  /* letter-spacing: 0.33em; */
-  z-index: 3;
-}
-
-
-/* .............................. */
-
-.main:hover .card {
-  margin: .2em;
-  background: rgb(1, 1, 1);
-}
-
-.main:hover .card:nth-child(5) {
-  border: transparent;
-}
-
-.main:hover .text {
-  opacity: 0;
-  z-index: -3;
-}
-
-.main:hover .instagram {
-  opacity: 1;
-}
-
-.main:hover .twitter {
-  opacity: 1;
-}
-
-.main:hover .dribble {
-  opacity: 1;
-}
-
-.main:hover .codepen {
-  opacity: 1;
-}
-
-.main:hover .uiverse {
-  opacity: 1;
-}
-
-.main:hover .discord {
-  opacity: 1;
-}
-
-.main:hover .github {
-  opacity: 1;
-}
-
-.main:hover .telegram {
-  opacity: 1;
-}
-
-.main:hover .reddit {
-  opacity: 1;
-}
-
-.card:nth-child(1):hover {
-  background-color: #cc39a4;
-}
-
-.card:nth-child(1):hover .instagram {
-  fill: white;
-}
-
-.card:nth-child(2):hover {
-  background-color: #03A9F4;
-}
-
-.card:nth-child(2):hover .twitter {
-  fill: white;
-}
-
-.card:nth-child(3):hover {
-  background-color: #ffb5d2;
-}
-
-.card:nth-child(3):hover .dribble {
-  fill: white;
-}
-
-.card:nth-child(4):hover {
-  background-color: #1E1F26;
-}
-
-.card:nth-child(4):hover .codepen {
-  fill: white;
-}
-
-.card:nth-child(5):hover {
-  animation: backgroundIMG .1s;
-  animation-fill-mode: forwards;
-}
-
-.card:nth-child(5):hover .uiverse #paint0_linear_501_142 stop {
-  stop-color: white;
-}
-
-.card:nth-child(5):hover .uiverse #paint1_linear_501_142 stop {
-  stop-color: white;
-}
-
-.card:nth-child(5):hover .uiverse #paint2_linear_501_142 stop {
-  stop-color: white;
-}
-
-@keyframes backgroundIMG {
-  100% {
-  background: #1E1F26;
-  }
-}
-
-.card:nth-child(6):hover {
-  background-color: #8c9eff;
-}
-
-.card:nth-child(6):hover .discord {
-  fill: white;
-}
-
-.card:nth-child(7):hover {
-  background-color: black;
-}
-
-.card:nth-child(7):hover .github {
-  fill: white;
-}
-
-.card:nth-child(8):hover {
-  background-color: #29b6f6;
-}
-
-.card:nth-child(8):hover .telegram > path:nth-of-type(1) {
-  fill: white;
-}
-
-.card:nth-child(8):hover .telegram > path:nth-of-type(2) {
-  fill: #29b6f6;
-}
-
-.card:nth-child(8):hover .telegram > path:nth-of-type(3) {
-  fill: #29b6f6;
-}
-
-.card:nth-child(9):hover {
-  background-color: rgb(255,69,0);
-}
-
-.card:nth-child(9) .reddit > g circle {
-  fill: rgb(255,69,0);
-}
-
-.card:nth-child(9) .reddit > g path {
-  fill: white;
-}
 
 
 
@@ -1023,3 +707,77 @@ color: #1d9bf0;
 
 
 
+
+
+.social-links,.flex-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 50%;
+  margin: 5px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+  margin-left: 5px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
+}
+
+#twitter svg {
+  fill: #1da1f2;
+}
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
+}
+
+
+
+
+.hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.hover span {
+  padding: 2px;
+  width: 80px;
+}

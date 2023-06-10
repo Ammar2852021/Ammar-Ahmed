@@ -279,7 +279,6 @@ body {
   overflow: auto;
 width: 100%;
 height: auto;
-
 }
 
 .anim {
@@ -1054,6 +1053,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 
   .main-container {
     padding: 0 20px 20px;
+    
   }
 
   .header {
