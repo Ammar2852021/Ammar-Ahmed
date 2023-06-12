@@ -821,7 +821,7 @@ video {
   font-size: 18px;
 }
 .chat-vid__container {
-  margin-top: 40px;
+  margin: 0px 0px 0px   20px;
 }
 .chat-vid__wrapper {
   display: flex;
@@ -872,7 +872,7 @@ video {
   align-items: center;
   justify-content: center;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 3px;
   cursor: pointer;
   transition: 0.3s;
 }

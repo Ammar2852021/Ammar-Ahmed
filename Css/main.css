@@ -783,111 +783,72 @@ color: #1d9bf0;
 }
 
 /* ........................... blor */
-.col.col-TOW-Grid-icons-End {
+
+/* .col.col-TOW-Grid-icons-End {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.card-id567 {
-  width: 100%;
-  height: 120px;
-  border-radius: 1rem;
-  padding: 1rem;
+} */
+
+.icon-conatiner {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 300ms ease;
-  animation: 8s thumb-thumb infinite;
-}
-
-.card-id567 svg path {
-  transition: 300ms ease;
-  stroke: rgb(20, 20, 20);
-  opacity: 0;
-}
-
-.bold-567 {
-  font-weight: bold;
-}
-
-.blurry-splash {
-  position: absolute;
-  inset: 0;
-  width: 60px;
-  margin: 0 auto;
-  height: 60px;
-  border-radius: 1rem;
-  z-index: -1;
-  opacity: 70%;
-  filter: blur(15px);
-
-}
-
-.prompt-id567 {
-  position: absolute;
-  color: rgb(29, 29, 29);
-  text-align: center;
-}
-
-.really-small-text {
-  text-align: center;
   width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.icon-conatiner svg {
+  width: 50px;
+  height: auto;
+}
+
+.icon-conatiner svg:last-child {
   position: absolute;
-  font-size: 8px;
-  margin-top: 28px;
-  opacity: 0.5;
 }
 
-.card-id567:hover {
-  cursor: none;
+.icon-conatiner:active {
+  animation: press 0.2s 1 linear;
 }
 
-.card-id567:hover .prompt-id567 {
-  transition: 300ms ease;
-  opacity: 0;
+.icon-conatiner:active svg:last-child {
+  animation: bounce 0.2s 1 linear;
 }
 
-.token-container {
-  animation: 2s spinny-token-yayyy infinite;
-  margin-bottom: 10px;
+.text {
+  color: #666;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+ 
+  text-align: center;
+  user-select: none;
 }
 
-.prompt-id567 svg path {
-  stroke: none;
-  opacity: 1;
-}
-
-.card-id567:hover svg path {
-  opacity: 1;
-}
-
-@keyframes spinny-token-yayyy {
+@keyframes press {
   0% {
-    transform: perspective(200px) rotateY(0deg);
+    transform: scale(1);
   }
 
-  100% {
-    transform: perspective(200px) rotateY(360deg);
-  }
-}
-
-@keyframes thumb-thumb {
-  0%, 10%, 100% {
-    transform: scale(100%);
+  50% {
+    transform: scale(0.92);
   }
 
-  5% {
-    transform: scale(103%);
-  }
-
-  7% {
-    transform: scale(97%);
+  to {
+    transform: scale(1);
   }
 }
 
+@keyframes bounce {
+  50% {
+    transform: rotate(5deg) translate(20px, -50px);
+  }
 
-.qr{color: white;
-  height:100px;
-  width: 100px;
+  to {
+    transform: scale(0.9) rotate(10deg) translate(50px, -80px);
+    opacity: 0;
+  }
 }
