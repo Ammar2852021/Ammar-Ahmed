@@ -840,7 +840,7 @@ video {
 .chat-vid__img {
   width: 100px;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: right;
