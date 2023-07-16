@@ -1483,7 +1483,14 @@ skills */
   .video-p-wrapper {
     flex-direction: row;
   }
-  .main-container {
+  .main-container,
+  .chat {
     padding: 0;
+  }
+  .chat-vid__container {
+    margin: 0;
+  }
+  .chat-footer input {
+    margin-left: 10px;
   }
 }
