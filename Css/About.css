@@ -1493,4 +1493,34 @@ skills */
   .chat-footer input {
     margin-left: 10px;
   }
+  .video-p-subtitle {
+    padding-right: 50px;
+  }
+  .video-p-wrapper .button-wrapper {
+    margin-right: 50px;
+  }
+  .video-p-name {
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+}
+
+/* .logo{font-weight: 900; letter-spacing: 15px;} */
+
+.r-yyyyoo {
+  fill: currentcolor;
+}
+
+.r-4qtqp9 {
+  /* position: absolute; */
+
+  margin-left: 0.5vh;
+}
+
+.r-1cvl2hr {
+  color: #1d9bf0;
+}
+
+.video-p-wrapper svg {
+  width: 23px;
 }
